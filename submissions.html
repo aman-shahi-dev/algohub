@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoHub Submissions</title>
+    <link rel="stylesheet" href="./css/submissions.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="navbar">
+            <button id="logoBtn" onclick="window.location.href='index.html'">
+                <img src="./assets/algohub-logo.png" alt="">
+            </button>
+            <a href="index.html"><h2>Dashboard</h2></a>
+            <a href="problems.html"><h2>Problems</h2></a>
+            <a href="submissions.html"><h2>Submissions</h2></a>
+            <a href="leaderboard.html"><h2>Leaderboard</h2></a>
+            <button id="profileBtn" type="submit"><i class="ri-account-circle-line"></i></button>
+        </div>
+        
+
+        <div class="hero">
+            <div class="tabs">  
+
+                <div class="problemName"><input type="text" name="" id="" placeholder="Problem Name" class="input"></div>
+                
+                <div class="status">
+
+                    <button class="statusBtn" onclick="toggleDropdownStatus()" id="statusResult">Status ⬇️</button>
+                    
+                    <div class="dropdown-content" id="statusDropdown">
+                        <a class="dropdown-item" id="accepted">✅ Accepted</a>
+                        <a class="dropdown-item" id="wrong">❌ Wrong Answer</a>
+                    </div>
+
+                </div>
+
+                <div class="platform">
+
+                    <button class="platformBtn" onclick="toggleDropdownPlatform()" id="platformResult">Platform 🧑‍💻</button>
+                    
+                    <div class="dropdown-content" id="platformDropdown">
+                        <a class="dropdown-item" id="leetcode">
+                            <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo.png" alt="external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo"/>
+                            Leetcode
+                        </a>
+                        <a class="dropdown-item" id="codechef">
+                            <img width="24" height="24" src="https://img.icons8.com/ios/50/codechef.png" alt="codechef"/>
+                            CodeChef
+                        </a>
+                        <a class="dropdown-item" id="atcoder">
+                            <img src="./assets/atcoder icon.svg" alt="" id="atcoderIcon">
+                            AtCoder
+                        </a>
+                        <a class="dropdown-item" id="codeforces">
+                            <img width="24" height="24" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-codeforces-programming-competitions-and-contests-programming-community-logo-color-tal-revivo.png" alt="external-codeforces-programming-competitions-and-contests-programming-community-logo-color-tal-revivo"/>
+                            Codeforces
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="difficultyRange">
+                    <h2>Difficult range</h2>
+                    <div class="start">
+                        <input type="text" placeholder="minimum rating" id="startInput">
+                    </div>
+                    <h2>-</h2>
+                    <div class="end">
+                        <input type="text" placeholder="maximum rating" id="endInput">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cards">
+                <div class="totalSubmissionsCard">
+                    <h1>350</h1>
+                    <h2>Total Submissions</h2>
+                </div>
+                <div class="acceptedCard">
+                    <h1>248</h1>
+                    <h2>Accepted</h2>
+                </div>
+                <div class="failedCard">
+                    <h1>102</h1>
+                    <h2>Failed</h2>
+                </div>
+                <div class="languagesUsedCard">
+                    <div class="chart"></div>
+                    <div class="languages">
+                        <h2>Languages Used</h2>
+                        <div class="line"></div>
+                        <div class="languageDetails">
+                            <h3>• Javascript</h3>
+                            <h3>• C++</h3>
+                            <h3>• Python</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="problemDetails">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Problem Name</th>
+                        <th>Status</th>
+                        <th>Difficulty</th>
+                        <th>Language</th>
+                        <th>Platform</th>
+                        <th>Submitted</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Two Sum</td>
+                        <td class="accepted">✅ Accepted</td>
+                        <td>1000</td>
+                        <td>C++</td>
+                        <td>LeetCode</td>
+                        <td>23 June, 9:10 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Max Subarray</td>
+                        <td class="failed">❌ Failed</td>
+                        <td>1200</td>
+                        <td>Python</td>
+                        <td>CodeChef</td>
+                        <td>23 June, 8:42 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Binary Search</td>
+                        <td class="accepted">✅ Accepted</td>
+                        <td>1100</td>
+                        <td>Javascript</td>
+                        <td>LeetCode</td>
+                        <td>23 June, 10:25 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Palindrome String</td>
+                        <td class="failed">❌ Failed</td>
+                        <td>800</td>
+                        <td>Python</td>
+                        <td>Codeforces</td>
+                        <td>23 June, 7:50 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Merge Intervals</td>
+                        <td class="accepted">✅ Accepted</td>
+                        <td>1400</td>
+                        <td>C++</td>
+                        <td>AtCoder</td>
+                        <td>22 June, 9:45 PM</td>
+                    </tr>
+                    <tr>
+                        <td>String Permutations</td>
+                        <td class="failed">❌ Failed</td>
+                        <td>1300</td>
+                        <td>Javascript</td>
+                        <td>CodeChef</td>
+                        <td>22 June, 6:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Graph Traversal</td>
+                        <td class="accepted">✅ Accepted</td>
+                        <td>1600</td>
+                        <td>Python</td>
+                        <td>Codeforces</td>
+                        <td>21 June, 11:10 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Rotate Matrix</td>
+                        <td class="accepted">✅ Accepted</td>
+                        <td>1500</td>
+                        <td>C++</td>
+                        <td>LeetCode</td>
+                        <td>21 June, 8:30 AM</td>
+                    </tr> 
+                    <tr>
+                        <td>Merge Intervals</td>
+                        <td class="accepted">✅ Accepted</td>
+                        <td>1800</td>
+                        <td>C++</td>
+                        <td>Codeforces</td>
+                        <td>25 May, 12:30 AM</td>
+                    </tr>     
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>  
+</body>
+<script src="./js/subsmissions.js"></script>
+</html>
