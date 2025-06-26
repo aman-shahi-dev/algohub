@@ -124,7 +124,117 @@ button:focus{
     width: 100%;
     height: 88%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 1rem;
     /* background-color: aquamarine; */
+}
+
+.detailsContainer {
+    width: 100%;
+    height: 68%;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 12px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* border: 3px solid black; */
+}
+
+
+.detailsContainer table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+    font-size: 1.2rem;
+}
+
+.detailsContainer th {
+    background-color: #cac8c8;
+    font-weight: bold;
+    height: 6.5%; /* More height for heading */
+    line-height: calc(54vh * 0.095); /* Vertical center */
+    font-size: 1.3rem; /* Slightly bigger font */
+}
+
+.detailsContainer td {
+    height: 4.91%; /* 10 rows × 4.91 = ~49.1% + heading = ~55.6% (close to 54%) */
+    line-height: calc(54vh * 0.0491); /* Vertical alignment */
+    border-bottom: 1px solid #918d8d;
+    text-align: center;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.detailsContainer td{
+    border-right: 1px solid #918d8d;
+}
+
+.detailsContainer a{
+    text-decoration: none;
+    color: black;
+}
+
+.buttonsContainer{
+    width: 100%;
+    height: 10%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonsContainer button{
+    /* background-color: #c2bbbb;  */
+    border: 1px solid black;
+    min-width: 12%;
+    font-size: 1.2rem;
+
+}
+
+
+.input{
+    width: 20%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-color: #c2bbbb81;
+    color: black;
+    border: 1px solid black;
+}
+
+.input::placeholder{
+    color: black;
+}
+
+.input:focus{
+    outline: none;
+    border: none;
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  gap: 0.5rem;
+  background-color: #c2bbbb81;
 }
 
 

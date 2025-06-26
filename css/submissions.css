@@ -156,6 +156,10 @@ button:focus{
     border-radius: 8px;
 }
 
+.input::placeholder{
+    color: black;
+}
+
 .input:focus{
     outline: none;
     border: none;
@@ -448,7 +452,8 @@ button:focus{
 .problemDetails td {
     height: 4.91%; /* 10 rows × 4.91 = ~49.1% + heading = ~55.6% (close to 54%) */
     line-height: calc(54vh * 0.0491); /* Vertical alignment */
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #918d8d;
+    border-right: 1px solid #918d8d;
     text-align: center;
     padding: 0;
     font-size: 1.2rem;
