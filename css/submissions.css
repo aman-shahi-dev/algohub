@@ -442,7 +442,8 @@ button:focus{
 }
 
 .problemDetails th {
-    background-color: #f5f5f5;
+    background-color: #cac8c8;
+    /* background-color: #f5f5f5; */
     font-weight: bold;
     height: 6.5%; /* More height for heading */
     line-height: calc(54vh * 0.095); /* Vertical center */
