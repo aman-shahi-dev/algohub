@@ -223,10 +223,30 @@ canvas {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
+    /* flex-direction: column; */
     /* border: 1px solid black; */
     box-shadow: 1px 1px 8px black;
     border-radius: 12px;
+    padding: 0.5rem;
+}
+
+.todoList{
+    width: 78%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: aqua; */
+    box-shadow: 1px 1px 8px black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    gap: 1rem;
+}
+
+.todoList h1{
+    font-size: 1.5rem;
 }
 
 .activity{
