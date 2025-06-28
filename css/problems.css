@@ -176,6 +176,7 @@ button:focus{
     flex-direction: column;
     padding: 0.5;
     gap: 0.5rem;
+    box-shadow: 1px 1px 8px black;
 }
 
 .topicFilter{
@@ -189,6 +190,7 @@ button:focus{
     flex-direction: column;
     padding: 0.5;
     gap: 0.6rem;
+    box-shadow: 1px 1px 8px black;
 }
 
 .input{
